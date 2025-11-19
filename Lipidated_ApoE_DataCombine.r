@@ -4,9 +4,7 @@
 #2025
 
 #Purpose: combine FIJI output data and exclude cells/regions-of-interests with no DAPI signal
-
 #Image analysis - combining the 3 channels of 3 viewpoints into one .csv file
-#Updated 11.27.2024
 
 #Set up-----------
 setwd("") #where FIJI output is located
@@ -26,6 +24,7 @@ phalloidins <- lapply(list.files("location", pattern = "phalloidin_morphology.cs
 popcs <- lapply(list.files("location", pattern = "_popc.csv"), read.csv) #popcs object will include all files from the FIJI output with the _popc.csv ending -> all .csvs for popc data
 
 
+#Data_Frame
 #The following steps are re-organizing the .csv datasets and creating a data-frame for each well picture. Then, it combines each well image to create one large dataframe per well. Then, it removes lines (each line represents a cell/region of interest) that's negative for DAPI (Maximum = 0). Finally, it outputs this filtered data-frame as a single .csv file per well.
 
 
