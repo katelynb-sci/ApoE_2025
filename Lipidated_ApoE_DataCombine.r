@@ -2,6 +2,7 @@
 
 #Katelyn Baker, University of Colorado Anschutz - Laboratory of Dr. Kimberley Bruce
 #2025
+#https://github.com/katelynb-sci
 
 #Purpose: combine FIJI output data and exclude cells/regions-of-interests with no DAPI signal
 #Image analysis - combining the 3 channels of 3 viewpoints into one .csv file
